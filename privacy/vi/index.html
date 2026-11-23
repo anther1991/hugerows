@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư HugeRows</title>
+<link rel="icon" href="../../icon.png">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <a class="lang" href="../">English</a>
+  <header><img src="../../icon.png" alt=""><h1>Chính sách quyền riêng tư HugeRows</h1></header>
+  <p class="meta">HugeRows do Anther phát hành. Cập nhật lần cuối: 23/11/2026. Nếu bản này khác bản tiếng Anh, bản tiếng Anh được dùng làm chuẩn.</p>
+
+  <h2>1. File của bạn ở lại trên máy bạn</h2>
+  <p>HugeRows mở và phân tích file hoàn toàn trên thiết bị của bạn. Nội dung file bạn mở, từ khóa tìm kiếm và câu lệnh SQL không bao giờ được gửi cho chúng tôi hay bất kỳ ai. HugeRows không có tài khoản và không cần kết nối internet để hoạt động.</p>
+
+  <h2>2. Những gì HugeRows không làm</h2>
+  <ul>
+    <li>Không thu thập số liệu sử dụng, không gửi báo cáo lỗi.</li>
+    <li>Không quảng cáo, không theo dõi.</li>
+    <li>Không tải lên nội dung file, tên file hay dữ liệu sử dụng.</li>
+    <li>Không tự kiểm tra bản cập nhật. Bản trên Microsoft Store do Store cập nhật.</li>
+  </ul>
+
+  <h2>3. Dữ liệu lưu trên máy bạn</h2>
+  <ul>
+    <li><strong>File tạm.</strong> HugeRows ghi một bản làm việc vào thư mục tạm (<code>%TEMP%\hugerows</code>) khi file bị nén, dùng bảng mã khác UTF-8, hoặc là file nhỏ trên ổ mạng hay ổ tháo rời. Kết quả SQL cũng nằm ở đó. Các file này bị xóa khi bạn đóng file hoặc đóng ứng dụng; phần còn sót lại sau khi ứng dụng bị tắt đột ngột được dọn ở lần chạy sau.</li>
+    <li><strong>Bản sao bạn yêu cầu.</strong> Với file lớn trên ổ mạng hoặc ổ tháo rời, bạn có thể cho HugeRows chép nó vào một thư mục bạn chọn. Bản sao đó (tên <code>hugerows-*.local</code>) bị xóa khi bạn đóng file. Nếu ứng dụng bị tắt đột ngột, bản sao có thể còn lại và xóa đi được an toàn.</li>
+    <li><strong>Xuất file.</strong> Trong lúc xuất, HugeRows ghi vào một file tạm cạnh nơi bạn chọn (tên có <code>.hvtmp-</code>) rồi đổi tên khi xuất xong. Nếu ứng dụng bị tắt đột ngột giữa chừng, file đó có thể còn lại và xóa đi được an toàn.</li>
+    <li><strong>Tùy chọn.</strong> Danh sách file mở gần đây, lịch sử SQL, cách sắp xếp cột của từng file, cài đặt giao diện và vị trí cửa sổ được lưu trong hồ sơ người dùng trên máy. Những dữ liệu này gồm đường dẫn file và nội dung câu lệnh bạn đã chạy, nhưng không gồm nội dung file. Bạn xóa được danh sách gần đây ngay trong ứng dụng. Gỡ bản Microsoft Store sẽ xóa các dữ liệu này; bộ cài từ trang web của chúng tôi sẽ hỏi bạn có muốn xóa không.</li>
+    <li><strong>License key.</strong> Nếu bạn kích hoạt HugeRows Pro bằng license key, key được lưu trong hồ sơ người dùng và được kiểm tra offline. Key chứa tên và email bạn cung cấp khi mua, để bạn nhận ra giấy phép của mình.</li>
+  </ul>
+
+  <h2>4. Khi nào có dùng internet</h2>
+  <p>Bản thân HugeRows không tạo kết nối mạng nào, trừ các trường hợp sau:</p>
+  <ul>
+    <li><strong>Bản Microsoft Store.</strong> Ứng dụng hỏi Microsoft Store trên máy bạn xem bạn đã mua bản đầy đủ chưa. Việc kiểm tra này do Windows và Microsoft thực hiện theo chính sách quyền riêng tư của Microsoft; HugeRows chỉ nhận câu trả lời có hoặc không.</li>
+    <li><strong>Liên kết bạn bấm.</strong> Nút "Mua" mở trang Store hoặc trang web của chúng tôi trong trình duyệt.</li>
+    <li><strong>File trên ổ mạng.</strong> Khi bạn mở file từ một vị trí mạng, Windows đọc nó qua mạng như với mọi ứng dụng khác.</li>
+    <li><strong>SQL bạn tự viết.</strong> Truy vấn chạy trong một bản DuckDB nhúng sẵn. HugeRows tắt việc DuckDB tự tải tiện ích mở rộng. Câu lệnh mà bạn chủ động cài tiện ích hoặc đọc từ một địa chỉ web sẽ được DuckDB thực hiện đúng như bạn viết.</li>
+  </ul>
+
+  <h2>5. Mua hàng</h2>
+  <p>Giao dịch mua do Microsoft Store hoặc đơn vị thanh toán của chúng tôi xử lý. Chúng tôi chỉ nhận thông tin cần để cấp giấy phép (tên, email và mã đơn hàng), không nhận thông tin thẻ của bạn.</p>
+
+  <h2>6. Thay đổi chính sách</h2>
+  <p>Nếu một phiên bản HugeRows sau này thay đổi bất kỳ điều gì ở trên, trang này sẽ được cập nhật và ngày ở đầu trang sẽ đổi.</p>
+
+  <h2>7. Liên hệ</h2>
+  <p>Câu hỏi về chính sách này: <a href="mailto:tranngoctam@outlook.com">tranngoctam@outlook.com</a>.</p>
+
+  <footer><a href="../../">HugeRows</a></footer>
+</main>
+</body>
+</html>
